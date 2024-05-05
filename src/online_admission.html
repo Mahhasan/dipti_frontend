@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Admission</title>
+  <link rel="stylesheet" href="../src/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body class="bg-white">
+  <section class="overflow-hidden">
+    <!-- ------------------ Nav Start ------------------ -->
+    <nav class="lg:py-7 pt-4 lg:absolute w-full fixed bg-white z-999999 lg:z-auto pb-4 shadow-md">
+      <div class="lg:max-w-container lg:px-5 xl:px-0 md:mx-auto mx-4 md:max-w-container-md">
+        <div class="flex justify-between items-center">
+          <div class="lg:w-15p w-56">
+            <a href="index.html">
+                <img src="../dist/images/dipti-logo.png" alt="dipti-logo" class="block w-70" />
+            </a>
+          </div>
+
+          <div class="hidden lg:flex w-65 justify-center gap-51 relative z-999999">
+            <a href="#"
+              class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">About
+              Us</a>
+            <a href="#"
+              class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Courses</a>
+            <a href="#"
+              class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Training</a>
+            <a href="#"
+              class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Academic</a>
+            <a href="#"
+              class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Success
+              Stories</a>
+          </div>
+
+          <div class="w-1/5 hidden lg:flex justify-end relative">
+            <a href="#"
+              class="font-pop text-base font-normal flex items-center gap-2.5 text-primary-dark-blue hover:text-tertiary-orange transition-all duration-150 relative z-10">
+              <span class="bg-primary-dark-blue w-30 h-30 rounded-full flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.258" height="17.285" viewBox="0 0 19.258 17.285">
+                  <path id="Path_3" data-name="Path 3"
+                    d="M15.129,18.143l9.129-5.072L15.129,8,6,13.072Zm0,0,6.248-3.469a12.254,12.254,0,0,1,.675,6.568,12.138,12.138,0,0,0-6.923,3.043,12.138,12.138,0,0,0-6.923-3.043,12.254,12.254,0,0,1,.675-6.568Zm-4.057,6.086V16.622l4.057-2.252"
+                    transform="translate(-5.5 -7.5)" fill="none" stroke="#FFFFFF" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1" />
+                </svg>
+              </span>
+              Online Admission</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="text-p-color lg:hidden cursor-pointer z-999999 relative">
+            <!-- Hamburger icon -->
+            <div id="nav-icon" class="w-6 h-4 relative cursor-pointer">
+              <span class="block absolute h-0.5 w-full bg-black top-0 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-1.5 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-1.5 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-3 left-0"></span>
+            </div>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="fixed w-full h-screen bg-primary-dark-blue hide top-54 z-999999">
+            <div class="px-5 py-10 text-center">
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">About
+                Us</a>
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Courses</a>
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Training</a>
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Academic</a>
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Success
+                Stories</a>
+              <a href="#"
+                class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                Online Admission</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------ Nav End ------------------ -->
+  </section>
+
+  <!-- ------------------ Upcoming Events Start ------------------ -->
+  <section class="lg:mt-186 mt-20">
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+      <h4 class="font-inter lg:text-38 text-3xl font-bold tracking-wide text-primary-dark-blue text-center">
+        Online Admission
+      </h4>
+
+      <div class="lg:mt-20 mt-10 lg:flex">
+        <div class="lg:w-1/2 relative bg-lighter py-9">
+          
+
+        <form class="max-w-md mx-auto">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+            </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+            </div>
+            </div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+  
+        </div>
+
+        <div class="lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left bg-light-sky py-9">
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+                    <li class="me-2 rounded-t-lg">
+                        <button class="inline-block p-4">Please Select Language</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 mb-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">English</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bangla</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="default-styled-tab-content">
+                <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>
+                </div>
+                <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                    <p class="text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>                </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------ Upcoming Events End ------------------ -->
+
+<!-- ------------------ Upcoming Events Start ------------------ -->
+<section class="md:mt-178 mt-100">
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+        <div class="lg:mt-20 mt-10 lg:flex lg:gap-10 xl:gap-85">
+            <div class="lg:w-1/2 flex justify-center items-center">
+                <div class="w-full">
+                    <h2
+                    class="mt-9 font-inter lg:text-4xl text-3xl font-extrabold text-primary-dark-blue lg:w-424 w-full relative capitalize">
+                    Admission Deadline
+                    </h2>
+                    <h5>
+                        February, 21th<span class="text-tertiary-orange">|</span> 2024
+                    </h5>
+                    <h4 class="font-pop text-2xl font-light lg:w-424 w-full lg:text-left mt-5 leading-6">
+                        Classes Start
+                    </h4>
+                    <h5>
+                        March, 2nd<span class="text-tertiary-orange">|</span> 2024
+                    </h5>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-end">
+                <img src="../dist/images/online-admission.png" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------ Upcoming Events End ------------------ -->
+  
+
+  <!-- ------------------ Footer Start ------------------ -->
+  <footer class="mt-200">
+    <a href="javascript:" id="return-to-top"
+      class="h-10 w-10 rounded-full bg-light-blue fixed z-999999 flex items-center justify-center right-5 bottom-5 transition-all ease-in-out duration-200 hover:bg-tertiary-orange">
+      <i class="ri-arrow-up-s-line text-black text-3xl"></i>
+    </a>
+  
+    <div class="max-w-container mx-auto px-4 lg:px-5 xl:px-0">
+      <div class="lg:flex mb-82">
+        <div class="lg:w-1/4 md:mx-auto w-full text-center sm:text-left mb-16 lg:mb-0">
+          <div class="w-82 mx-auto lg:ml-0">
+            <img src="../dist/images/dipti-orginal-logo.png" alt="dipti" class="w-full block" />
+          </div>
+  
+          <h6 class="lg:w-189 font-inter text-base font-medium text-secondary-dark-blue mt-12 text-center lg:text-left">
+            Daffodil International Professional Training Institute (DIPTI)
+          </h6>
+  
+          <div class="mt-12 flex justify-center lg:justify-start lg:gap-18 gap-10">
+            <a href="#"
+              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+              <span class="fb-svg"></span>
+            </a>
+  
+            <a href="#"
+              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+              <span class="tw-svg"></span>
+            </a>
+  
+            <a href="#"
+              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+              <span class="li-svg"></span>
+            </a>
+  
+            <a href="#"
+              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+              <span class="yt-svg"></span>
+            </a>
+          </div>
+        </div>
+        <div class="md:flex lg:w-3/4">
+          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-7">
+            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B]">
+              Important Links
+            </p>
+  
+            <ul class="mt-9">
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Training
+                  Programs</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Corporate
+                  partners</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Affiliation</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">CSR</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Job
+                  Facilities</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
+            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
+              Important Links
+            </p>
+  
+            <ul class="mt-9">
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Class
+                  Routine</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notice
+                  board</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Results
+                  board</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
+                  students of the year</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
+                  teachers of the year</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
+            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
+              Important Links
+            </p>
+  
+            <ul class="mt-9">
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Meet
+                  teacher’s</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Administration</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Students
+                  portal</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Skill
+                  Assessment</a>
+              </li>
+              <li class="mt-5">
+                <a href="#"
+                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-light-sky">
+      <div class="max-w-container mx-auto px-4 lg:px-0">
+        <div class="md:flex py-69">
+          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+              <span class="lo-svg"></span>
+            </p>
+  
+            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+              Daffodil Plaza, 4/2, Sobhanbag, Mirpur Road, Dhaka-1207
+            </p>
+          </div>
+  
+          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+              <span class="ph-svg"></span>
+            </p>
+  
+            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+              01713-493233, 01713-493288, 01713-493267
+            </p>
+          </div>
+  
+          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+              <span class="em-svg"></span>
+            </p>
+  
+            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+              info@dipti.com.bd
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-[#1C1C1C] px-4 lg:px-0 md:px-20">
+      <p class="text-center font-pop text-[#8B8B8B] text-sm tracking-wide py-7">
+        Copyright © 2004-2024 Daffodil International Professional Training
+        Institute (DIPTI). All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- ------------------ Footer End ------------------ -->
+
+  <script> 
+    // ===== Return to Top ====
+    // Detect scroll events
+    window.addEventListener("scroll", function () {
+      var returnToTopButton = document.getElementById("return-to-top");
+
+      // If page is scrolled more than 500px, fade in the button
+      if (window.scrollY >= 800) {
+        returnToTopButton.style.opacity = "1";
+      } else {
+        // Else fade out the button
+        returnToTopButton.style.opacity = "0";
+      }
+    });
+
+    // Handle click event on the return-to-top button
+    document
+      .getElementById("return-to-top")
+      .addEventListener("click", function () {
+        // Scroll to the top of the page
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll animation
+        });
+    });
+
+    // Script for Navigation bar Mobile menu
+    let navIcon = document.querySelector("#nav-icon");
+    let mobileMenu = document.querySelector("#mobile-menu");
+
+    navIcon.addEventListener("click", function () {
+        navIcon.classList.toggle("open");
+        mobileMenu.classList.toggle("show");
+    });
+  </script>
+  <script src="../src/js/tiny-slider.js"></script>
+  <script src="../src/js/sweetalert2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../src/js/svg.js"></script>
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>
