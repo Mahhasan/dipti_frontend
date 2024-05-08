@@ -7,10 +7,17 @@
   <title>Online Admission</title>
   <link rel="stylesheet" href="../src/css/tiny-slider.css" />
   <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
+  <!-- CDN for tab menu -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="../dist/output.css" />
+  <style>
+    .fullwidth {
+      position: relative;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body class="bg-white">
@@ -92,124 +99,129 @@
   </section>
 
   <!-- ------------------ Upcoming Events Start ------------------ -->
-  <section class="lg:mt-186 mt-20">
+  <section class="fullwidth lg:mt-186 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-      <h4 class="font-inter lg:text-38 text-3xl font-bold tracking-wide text-primary-dark-blue text-center">
+      <h2 class="font-inter text-3xl lg:text-42 leading-10 lg:leading-72 font-extrabold text-primary-dark-blue text-center mx-auto lg:max-w-4xl">
         Online Admission
-      </h4>
+      </h2>
+    </div>
+  </section>
 
-      <div class="lg:mt-20 mt-10 lg:flex">
-        <div class="lg:w-1/2 relative bg-lighter py-9">
-          
+  <section class="fullwidth lg:mt-20 mt-14">
+    <div class="left-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-lighter"></div>
+    <div class="right-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-light-sky"></div>   
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+      <div class="lg:flex ">
+        <div class="lg:w-1/2 relative my-71">
+          <h4 class="mb-8 font-inter text-2xl lg:text-33 font-bold leading-72 text-gray-3 text-center lg:text-start">
+            Online Admission Form
+          </h4>
+          <form class="pr-2 mx-auto lg:max-w-container md:max-w-container-md">
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Full Name</label></div>
+              <input type="text" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="Keep 30 characters"/>
+            </div>
 
-        <form class="max-w-md mx-auto">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Birth Date</label></div>
+              <input type="email" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder=""/>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Gender</label></div>
+              <input type="email" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder=""/>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Phone Number</label></div>
+              <input type="number" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="01xxxxxxxxx"/>
             </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">E-mail Address</label></div>
+              <input type="email" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="The e-mail address must include '@'"/>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Select Course</label></div>
+              <input type="" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="AWS Cloud Computing [Technical Essentials & Cloud Practitioner]"/>
             </div>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Select Shift</label></div>
+              <input type="" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder=""/>
             </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+
+            <div class="flex mb-5 group border-0 border-b-2 border-gray-300">
+              <div class="w-1/4 flex items-center"><label for="" class="text-sm">Are You a Robot?</label></div>
+              <input type="" name="" id="" class="w-3/4 block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder=""/>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
-            </div>
-            </div>
+            
             <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-        </form>
-  
+          </form>
         </div>
 
-        <div class="lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left bg-light-sky py-9">
-            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-                    <li class="me-2 rounded-t-lg">
-                        <button class="inline-block p-4">Please Select Language</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 mb-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">English</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bangla</button>
-                    </li>
-                </ul>
+        <div class="lg:w-1/2 my-71 lg:mt-170 relative">
+          <div class="mb-4 border-b-2 border-gray-1 dark:border-gray-1 border-opacity-15 ml-1">
+            <ul class="lg:ml-102 lg:w-429 flex flex-wrap -mb-px text-sm font-medium text-center justify-between" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-primary-dark-blue hover:text-primary-dark-blue dark:text-purple-500 dark:hover:text-purple-500 border-tertiary-orange dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+              <li class="">
+                <button class="inline-block font-pop font-normal text-sm pb-2 text-primary-dark-blue">Please Select Language</button>
+              </li>
+              <li class="" role="presentation">
+                <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">English</button>
+              </li>
+              <li class="" role="presentation">
+                <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bangla</button>
+              </li>
+            </ul>
+          </div>
+          <div id="default-styled-tab-content">
+            <div class="lg:ml-106 hidden rounded-lg dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+              <p class="font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>
             </div>
-            <div id="default-styled-tab-content">
-                <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>
-                </div>
-                <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p class="text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>                </div>
+            <div class="lg:ml-106 hidden rounded-lg dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+              <p class="font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue dark:text-gray-400">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange dark:text00">Call/WhatsApp: 01713493267, 01713493233</p>
             </div>
-
-
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- ------------------ Upcoming Events End ------------------ -->
 
-<!-- ------------------ Upcoming Events Start ------------------ -->
-<section class="md:mt-178 mt-100">
+  <!-- ------------------ Upcoming Events Start ------------------ -->
+  <section class="md:mt-20 mt-14">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-        <div class="lg:mt-20 mt-10 lg:flex lg:gap-10 xl:gap-85">
-            <div class="lg:w-1/2 flex justify-center items-center">
-                <div class="w-full">
-                    <h2
-                    class="mt-9 font-inter lg:text-4xl text-3xl font-extrabold text-primary-dark-blue lg:w-424 w-full relative capitalize">
-                    Admission Deadline
-                    </h2>
-                    <h5>
-                        February, 21th<span class="text-tertiary-orange">|</span> 2024
-                    </h5>
-                    <h4 class="font-pop text-2xl font-light lg:w-424 w-full lg:text-left mt-5 leading-6">
-                        Classes Start
-                    </h4>
-                    <h5>
-                        March, 2nd<span class="text-tertiary-orange">|</span> 2024
-                    </h5>
-                </div>
-            </div>
-            <div class="lg:w-1/2 flex justify-end">
-                <img src="../dist/images/online-admission.png" alt="Image">
-            </div>
+      <div class="lg:mt-20 mt-10 md:flex md:gap-10 xl:gap-85">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <div class="text-center md:text-start">
+            <h2 class="font-inter lg:text-40 text-3xl leading-53 font-medium text-Dark-moderate-blue w-full">
+              Admission Deadline
+            </h2>
+            <h5 class="mt-4 md:mt-10 font-inter font-medium text-lg leading-35 text-grim-reaper">February, 21th<span class="text-tertiary-orange mx-4">|</span> 2024</h5>
+            <h4 class="mt-6 md:mt-10 font-inter text-33 font-medium leading-44 text-[#221D26]">Classes Start</h4>
+            <h5 class="mt-4 md:mt-10 font-inter font-medium text-lg leading-35 text-grim-reaper">March, 2nd<span class="text-tertiary-orange mx-4">|</span> 2024</h5>
+          </div>
         </div>
+        <div class="md:w-1/2 flex items-center justify-center md:justify-end">
+          <img src="../dist/images/online-admission.png" alt="Image">
+        </div>
+      </div>
     </div>
-</section>
-
-<!-- ------------------ Upcoming Events End ------------------ -->
+  </section>
+  <!-- ------------------ Upcoming Events End ------------------ -->
   
 
   <!-- ------------------ Footer Start ------------------ -->
