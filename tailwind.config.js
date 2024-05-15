@@ -160,7 +160,6 @@ module.exports = {
       },
       spacing: {
         p7: "7px",
-        11: "11px",
         15: "15px",
         13: "13px",
         17: "17px",
