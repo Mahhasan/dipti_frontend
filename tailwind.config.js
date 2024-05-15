@@ -83,6 +83,7 @@ module.exports = {
         74: "74px",
         82: "82px",
         130: "130px",
+        134: "134px",
         137: "137px",
         167: "167px",
         189: "189px",
@@ -119,6 +120,7 @@ module.exports = {
         "9p": "9px",
         11: "11px",
         15: "15px",
+        23: "23px",
         25: "25px",
         26: "26px",
         27: "27px",
@@ -220,7 +222,7 @@ module.exports = {
       boxShadow: {
         btn: "2px 3px 0px #0D1128;",
         category: "1px 1px 20px #71CBFF40",
-        notice: "29.698px 29.698px 28.5px rgba(0,0,0,0.07)",
+        notice: "3.698px 3.698px 3.5px rgba(0,0,0,0.07)",
       },
       filter: {
         'filter-notice': 'drop-shadow(29.698px 29.698px 28.5px rgba(0,0,0,0.16))',
