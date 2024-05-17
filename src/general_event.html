@@ -7,9 +7,14 @@
   <title>General Event</title>
   <link rel="stylesheet" href="../src/css/tiny-slider.css" />
   <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- cdn for center mode slider -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="../src/css/slider.css" />
 </head>
 
 <body class="bg-white">
@@ -89,44 +94,77 @@
   </section>
 
   <!-- ------------------ Upcoming Event Start ------------------ -->
-  <section class="lg:mt-186 mt-20">
+  <section class="lg:mt-36 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
       <h2 class="font-inter text-2xl lg:text-42 leading-7 lg:leading-72 text-primary-dark-blue text-center mx-auto lg:max-w-5xl font-extrabold">
         General Event
       </h2>
-      <div class="w-full lg:mt-100 mt-20">
-        <h2 class="font-gotham text-3xl lg:text-40 leading-53 font-medium text-[#221D26] lg:w-424 w-full relative">
-          Event Title
-        </h2>
-        <h5 class="mt-10 font-pop font-medium leading-35 text-18 text-grim-reaper">
-            6pm - 9.30pm <span class="text-tertiary-orange">|</span> February, 21th
-        </h5>
-        <h6 class="mt-7 font-pop font-medium leading-35 text-18 text-grim-reaper">
-            Sheraton, Dhaka
-        </h6>
-      </div>
-
-      <div class="mt-50 lg:flex lg:gap-10 xl:gap-85">
-        <div class="lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">
+      <div class="w-full lg:mt-14 mt-8">
+        <div class="">
+          <h2 class="font-gotham text-3xl lg:text-40 leading-53 font-medium text-[#221D26] lg:w-424 w-full relative">
+            Event Title
+          </h2>
+          <h5 class="mt-10 font-pop font-medium leading-35 text-18 text-grim-reaper">
+              6pm - 9.30pm <span class="text-tertiary-orange">|</span> February, 21th
+          </h5>
+          <h6 class="mt-7 font-pop font-medium leading-35 text-18 text-grim-reaper">
+              Sheraton, Dhaka
+          </h6>
+        </div>
+        <div class="mt-10 lg:mt-0 text-center lg:text-left">
           <p class="font-pop font-normal text-base leading-30 text-primary-dark-blue text-justify">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Aenean massa. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellente . Aenean massa. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellente
           </p>
           <button href="#" class="banner-btn px-7 py-4 mt-14 leading-70">Register</button>
         </div>
-        <div class="lg:w-1/2 relative">
+      </div>
+      
+
+      <div class="mt-14">  
+        <div class="slider">
           
-          <div class="upcoming-event-slider">
-              <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
-              class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
-              <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
-              class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
-              <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
-              class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
-              <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
-              class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">
           </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+          
         </div>
       </div>
+
+
+
+      <!-- <div class="mt-14 relative">
+        <div class="upcoming-event-slider">
+            <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
+            class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
+            <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
+            class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
+            <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
+            class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
+            <img src="../dist/images/event/event1.png" alt="upcoming event dipti"
+            class="lg:max-w-525 w-full block md:h-344 rounded-20 object-cover lg:h-full" />
+        </div>
+      </div> -->
     </div>
   </section>
   <!-- ------------------ Upcoming Event End ------------------ -->
@@ -829,17 +867,7 @@
     
     document.addEventListener("DOMContentLoaded", function () {
         // Upcoming event slider start
-        var slider = tns({
-            container: ".upcoming-event-slider",
-            items: 1,
-            gutter: 16,
-            edgePadding: 16,
-            controls: false,
-            nav: true,
-            navPosition: "bottom",
-            mouseDrag: true,
-            speed: 400,
-        });
+        
         // Event archive slider start
         var slider = tns({
             container: ".archive-event-slider-one",
@@ -1027,6 +1055,45 @@
         navIcon.classList.toggle("open");
         mobileMenu.classList.toggle("show");
     });
+
+    // for center mode slider
+    $('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  centerMode: true,
+  variableWidth: true,
+  infinite: true,
+  focusOnSelect: true,
+  cssEase: 'linear',
+  touchMove: true,
+  prevArrow:'<button class="slick-prev"> </button>',
+  nextArrow:'<button class="slick-next"> </button>',
+  
+          // responsive: [                        
+          //     {
+          //       breakpoint: 412,
+          //       settings: {
+          //         centerMode: false,
+          //         variableWidth: false,
+          //       }
+          //     },
+          // ]
+});
+
+
+var imgs = $('.slider img');
+imgs.each(function(){
+  var item = $(this).closest('.item');
+  item.css({
+    'background-image': 'url(' + $(this).attr('src') + ')', 
+    'background-position': 'center',            
+    '-webkit-background-size': 'cover',
+    'background-size': 'cover', 
+  });
+  $(this).hide();
+});
   </script>
   <script src="../src/js/tiny-slider.js"></script>
   <script src="../src/js/sweetalert2.min.js"></script>

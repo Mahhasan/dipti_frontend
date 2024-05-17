@@ -98,30 +98,30 @@
   </section>
 
   <!-- ------------------ Upcoming Events Start ------------------ -->
-  <section class="fullwidth lg:mt-186 mt-20">
+  <section class="lg:mt-36 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-      <h2 class="font-inter text-3xl lg:text-42 leading-10 lg:leading-72 font-extrabold text-primary-dark-blue text-center mx-auto lg:max-w-4xl">
+      <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto lg:max-w-5xl font-extrabold">
         Online Admission
       </h2>
     </div>
   </section>
 
-  <section class="fullwidth lg:mt-20 mt-14">
-    <div class="left-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-lighter"></div>
-    <div class="right-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-light-sky"></div>   
-    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+  <section class="fullwidth lg:mt-14 mt-6">
+    <div class="hidden lg:block left-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-lighter"></div>
+    <div class="hidden lg:block right-0 top-0 bottom-0 absolute w-full lg:w-1/2 bg-light-sky"></div>   
+    <div class="lg:max-w-container mx-auto md:px-0 lg:px-5 xl:px-0">
       <div class="lg:flex">
-        <div class="lg:w-1/2 relative my-71">
-          <h4 class="mb-8 font-inter text-2xl lg:text-33 font-bold leading-72 text-gray-3 text-center lg:text-start">
+        <div class="lg:w-1/2 relative bg-light-sky lg:bg-lighter lg:px-0 px-4 py-10 lg:py-71 rounded">
+          <h4 class="mb-8 font-inter text-xl lg:text-33 font-bold lg:leading-72 text-gray-3 text-center lg:text-start">
             Online Admission Form
           </h4>
-          <form class="pr-2 mx-auto lg:max-w-container md:max-w-container-md ">
-            <div class="flex py-2 group border-0 border-b-2 border-gray-300 items-center justify-center">
+          <form class="pr-0 lg:pr-2 mx-auto lg:max-w-container md:max-w-container-md">
+            <div class="flex gap-1 py-2 group border-0 border-b-2 border-gray-300 items-center justify-center">
               <div class="w-1/4 flex items-center"><label for="" class="text-sm">Full Name</label></div>
               <input type="text" name="" id="" class="w-3/4 block px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="Keep 30 characters"/>
             </div>
             
-            <div class="flex py-3.5 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-3.5 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4">
                 <label for="day" class="text-sm">Birth Date</label>
               </div>
@@ -140,7 +140,7 @@
               </div>
             </div>
 
-            <div class="flex py-3.5 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-3.5 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4">
                 <label for="" class="text-sm">Gender</label>
               </div>
@@ -154,21 +154,21 @@
               </div>            
             </div>
 
-            <div class="flex py-2 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-2 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4 flex items-center"><label for="" class="text-sm">Phone Number</label></div>
               <input type="tel" name="" id="" class="w-3/4 block px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="01xxxxxxxxx"/>
             </div>
 
-            <div class="flex py-2 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-2 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4 flex items-center"><label for="" class="text-sm">E-mail Address</label></div>
-              <input type="email" name="" id="" class="w-3/4 block px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="The e-mail address must include '@'"/>
+              <input type="email" name="" id="" class="w-3/4 block px-0 text-sm text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0" placeholder="The e-mail address must include '@'"/ required>
             </div>
 
-            <div class="flex py-3.5 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-3.5 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4">
                 <label for="" class="text-sm">Select Course</label>
               </div>
-              <div class="flex w-3/4">
+              <div class="flex gap-1 w-3/4">
                 <select id="course" name="course" class="w-134 px-2 py-px text-sm text-gray-900 bg-transparent border border-tertiary-orange rounded-md focus:outline-none focus:border-primary">
                   <option value="">Select Course</option>
                   <option value="male">Java</option>
@@ -178,11 +178,11 @@
               </div>
             </div>
 
-            <div class="flex py-3.5 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-3.5 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4">
                 <label for="" class="text-sm">Select Shift</label>
               </div>
-              <div class="flex w-3/4">
+              <div class="flex gap-1 w-3/4">
                 <select id="course" name="course" class="w-134 px-2 py-px text-sm text-gray-900 bg-transparent border border-tertiary-orange rounded-md focus:outline-none focus:border-primary">
                   <option value="">Select Shift</option>
                   <option value="male">Morning</option>
@@ -191,7 +191,7 @@
               </div>            
             </div>
 
-            <div class="flex py-3.5 group border-0 border-b-2 border-gray-300">
+            <div class="flex gap-1 py-3.5 group border-0 border-b-2 border-gray-300">
               <div class="w-1/4 flex">
                 <label for="" class="text-sm">Are You a Robot?</label>
               </div>
@@ -205,38 +205,40 @@
           </form>
         </div>
 
-        <div class="lg:w-1/2 my-71 lg:mt-182 relative lg:pb-0 pb-12">
-          <div class="mb-4 border-b-2 border-gray-1 border-opacity-15 ml-1">
-            <ul class="lg:ml-102 lg:w-429 flex flex-wrap -mb-px text-sm font-medium text-center justify-between" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-primary-dark-blue hover:text-primary-dark-blue border-tertiary-orange" data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300" role="tablist">
-              <li class="">
-                <button class="inline-block font-pop font-normal text-sm pb-2 text-primary-dark-blue">Please Select Language</button>
-              </li>
-              <li class="" role="presentation">
-                <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">English</button>
-              </li>
-              <li class="" role="presentation">
-                <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bangla</button>
-              </li>
-            </ul>
-          </div>
-          <div id="default-styled-tab-content">
-            <div class="lg:ml-106 hidden rounded-lg" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-              <p class="font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange">Call/WhatsApp: 01713493267, 01713493233</p>
+        <div class="lg:w-1/2 lg:mt-182 relative px-4 lg:py-0 py-12 bg-lighter lg:bg-light-sky">
+          <div class="md:max-w-container-md mx-auto">
+            <div class="mb-4 border-b-2 border-gray-1 border-opacity-15 ml-1">
+              <ul class="lg:ml-102 flex flex-wrap -mb-px text-sm font-medium text-center justify-between" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-primary-dark-blue hover:text-primary-dark-blue border-tertiary-orange" data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300" role="tablist">
+                <li class="">
+                  <h4 class="inline-block font-pop font-normal text-sm pb-2 text-primary-dark-blue">Please Select Language</h4>
+                </li>
+                <li class="" role="presentation">
+                  <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">English</button>
+                </li>
+                <li class="" role="presentation">
+                  <button class="inline-block font-pop font-normal text-lg leading-5 pb-2 text-[#8B8B8B] mb-4 border-b-2 hover:text-primary-dark-blue hover:border-tertiary-orange" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bangla</button>
+                </li>
+              </ul>
             </div>
-            <div class="lg:ml-106 hidden rounded-lg" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-              <p class="font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-              <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange">Call/WhatsApp: 01713493267, 01713493233</p>
+            <div id="default-styled-tab-content">
+              <div class="lg:ml-106 hidden rounded-lg" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                <p class="font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange">Call/WhatsApp: 01713493267, 01713493233</p>
+              </div>
+              <div class="lg:ml-106 hidden rounded-lg" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+                <p class="font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-primary-dark-blue">বাংলা ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p class="mt-10 font-pop font-normal text-sm text-tertiary-orange">Call/WhatsApp: 01713493267, 01713493233</p>
+              </div>
             </div>
           </div>
         </div>

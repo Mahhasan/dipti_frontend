@@ -8,7 +8,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "find": "^0.3.0",
-    "sweetalert2": "^11.7.32",
+    "sweetalert2": "^11.6.13",
     "tiny-slider": "^2.9.4"
   }
 }
