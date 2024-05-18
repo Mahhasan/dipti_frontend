@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Campus</title>
+  <title>Campuses</title>
   <link rel="stylesheet" href="../src/css/tiny-slider.css" />
   <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- cdn for center mode slider -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="../src/css/slider.css" />
 </head>
 
 <body class="bg-white">
@@ -90,48 +95,40 @@
 
 
   <!-- ------------------ Parmanent Campus Start ------------------ -->
-  <section class="lg:mt-186 mt-20">
+  <section class="lg:mt-36 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 md:max-w-container-md lg:px-5 xl:px-0">
       <div class="items-center">
-        <h2 class="font-inter text-2xl lg:text-42 leading-7 lg:leading-72 text-primary-dark-blue text-center mx-auto lg:max-w-5xl font-extrabold">
+        <h2 class="font-inter text-2xl lg:text-42 leading-7 lg:leading-72 text-primary-dark-blue text-center mx-auto lg:max-w-5xl font-bold">
           Campuses
         </h2>
       </div>
-      <div class="mt-14 sm:flex sm:flex-wrap lg:-mx-4">
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-1.png" alt="Quality Course" 
-              class="block w-full h-full object-cover" />
+
+      <div class="mt-14">  
+        <div class="slider">
+          
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-2.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-3.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-ful">
-            <img src="../dist/images/campus/campus-1.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-2.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-4.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
         </div>
       </div>
@@ -140,25 +137,25 @@
   <!-- ------------------ Parmanent Campus End------------------ -->
 
   <!--------------- Parmanent campus address start------------------->
-  <section class="lg:mt-52 mt-20">
+  <section class="lg:mt-32 mt-20">
     <div class="lg:max-w-container-large mx-auto px-4 md:max-w-container-md gap-y-4">
         <h2 class="text-center font-inter text-2xl lg:text-3xl leading-35 font-normal tracking-wide text-Dark-moderate-blue">
           Permanent Campus
         </h2>
         <div class="bg-white mt-12 lg:w-850 mx-auto">
-          <div class="flex gap-50">
+          <div class="flex gap-4 lg:gap-50">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Address
               </h6>
             </div>
             <div class="w-3/4">
-              <h6 class="font-pop font-normal text-sm leading-3 text-tertiary-sky cursor-default hover:text-tertiary-orange transition duration-200">
+              <h6 class="font-pop font-normal text-sm text-tertiary-sky cursor-default hover:text-tertiary-orange transition duration-200">
                 Daffodil Plaza, 4/2, Sobhanbag, Mirpur Road, Dhaka-1207
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Contact Person
@@ -170,7 +167,7 @@
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Contact Number
@@ -182,7 +179,7 @@
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Email
@@ -201,13 +198,14 @@
   <!------------ Parmanent campus address end------------->
 
   <!--------------------- Google map start---------------->
-  <section class="lg:mt-100 mt-20">
+  <section class="mt-20">
     <div class="lg:max-w-container-large mx-auto px-4 md:max-w-container-md">
       <h2 class="text-center font-inter text-2xl lg:text-3xl leading-35 font-normal text-Dark-moderate-blue">
-        See It In Maps
+        Come And Visit Us
       </h2>
-      <div class="mt-14 relative w-full h-407">
-        <iframe class="absolute top-0 left-0 w-full h-full"
+      <div class="mt-14 w-full">
+        <img src="../dist/images/map-bg.png" class="w-full lg:h-350 rounded" alt=""/>
+        <iframe class="w-full lg:h-350 px-5 sm:px-16  rounded -mt-20 sm:-mt-175"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
           frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
@@ -217,43 +215,34 @@
   <!----------------- Google map end ------------------->
 
   <!-- ---------------- Panthapath Campus Start ------------------ -->
-  <section class="lg:mt-175 mt-20">
+  <section class="lg:mt-36 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 md:max-w-container-md lg:px-5 xl:px-0">
-      <div class="sm:flex sm:flex-wrap lg:-mx-4">
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-1.png" alt="Quality Course" 
-              class="block w-full h-full object-cover" />
+      <div class="mt-14">  
+        <div class="slider">
+          
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-2.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-3.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-ful">
-            <img src="../dist/images/campus/campus-1.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-2.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-48p px-4 mb-12">
-          <div class="w-full">
-            <img src="../dist/images/campus/campus-4.png" alt="Quality Course"
-              class="block w-full h-full object-cover" />
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
           </div>
         </div>
       </div>
@@ -262,13 +251,13 @@
   <!-- ------------------ Panthapath Campus End------------------ -->
 
   <!--------------- Panthapath campus address start------------------->
-  <section class="lg:mt-52 mt-20">
+  <section class="lg:mt-32 mt-20">
     <div class="lg:max-w-container-large mx-auto px-4 md:max-w-container-md gap-y-4">
         <h2 class="text-center font-inter text-2xl lg:text-3xl leading-35 font-normal tracking-wide text-Dark-moderate-blue">
           Permanent Campus
         </h2>
         <div class="bg-white mt-12 lg:w-850 mx-auto">
-          <div class="flex gap-50">
+          <div class="flex gap-4 lg:gap-50">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Address
@@ -280,7 +269,7 @@
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Contact Person
@@ -292,7 +281,7 @@
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Contact Number
@@ -304,7 +293,7 @@
               </h6>
             </div>
           </div>
-          <div class="flex gap-50 mt-6">
+          <div class="flex gap-4 lg:gap-50 mt-4 lg:mt-6">
             <div class="w-1/4">
               <h6 class="font-pop font-normal text-base leading-5 text-primary-dark-blue cursor-default hover:text-tertiary-orange transition duration-200">
                 Email
@@ -323,13 +312,14 @@
   <!---------------- Panthapath campus address end-------------->
 
   <!-------------- Google map start----------------->
-  <section class="lg:mt-100 mt-20">
+  <section class="mt-20">
     <div class="lg:max-w-container-large mx-auto px-4 md:max-w-container-md">
       <h2 class="text-center font-inter text-2xl lg:text-3xl leading-35 font-normal text-Dark-moderate-blue">
-        See It In Maps
+        Come And Visit Us
       </h2>
-      <div class="mt-14 relative w-full h-407">
-        <iframe class="absolute top-0 left-0 w-full h-full"
+      <div class="mt-14 w-full">
+        <img src="../dist/images/map-bg.png" class="w-full lg:h-350 rounded" alt=""/>
+        <iframe class="w-full lg:h-350 px-5 sm:px-16  rounded -mt-20 sm:-mt-175"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
           frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
@@ -524,6 +514,45 @@
   <!-- ------------------ Footer End ------------------ -->
 
   <script> 
+    // for center mode slider
+    $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        variableWidth: true,
+        infinite: true,
+        focusOnSelect: true,
+        cssEase: 'linear',
+        touchMove: true,
+        prevArrow:'<button class="slick-prev"> </button>',
+        nextArrow:'<button class="slick-next"> </button>',
+        
+                // responsive: [                        
+                //     {
+                //       breakpoint: 412,
+                //       settings: {
+                //         centerMode: false,
+                //         variableWidth: false,
+                //       }
+                //     },
+                // ]
+      });
+
+
+    var imgs = $('.slider img');
+    imgs.each(function(){
+      var item = $(this).closest('.item');
+      item.css({
+        'background-image': 'url(' + $(this).attr('src') + ')', 
+        'background-position': 'center',            
+        '-webkit-background-size': 'cover',
+        'background-size': 'cover', 
+      });
+      $(this).hide();
+    });
+    
     // ===== Return to Top ====
     // Detect scroll events
     window.addEventListener("scroll", function () {
