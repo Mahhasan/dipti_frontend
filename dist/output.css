@@ -1078,6 +1078,10 @@ video {
   margin-top: -5rem;
 }
 
+.-mt-24p {
+  margin-top: -24%;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1272,14 +1276,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.-mt-85p {
-  margin-top: -85%;
-}
-
-.-mt-24p {
-  margin-top: -24%;
 }
 
 .box-border {
@@ -1495,10 +1491,6 @@ video {
   min-height: 24rem;
 }
 
-.w-1\/12 {
-  width: 8.333333%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1521,10 +1513,6 @@ video {
 
 .w-11 {
   width: 11px;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .w-12 {
@@ -1705,10 +1693,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-14 {
-  min-width: 3.5rem;
 }
 
 .max-w-347 {
@@ -2131,6 +2115,11 @@ video {
   background-color: rgb(42 48 115 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F0F7FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 247 251 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FCC211\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 194 17 / var(--tw-bg-opacity));
@@ -2280,11 +2269,6 @@ video {
   background-color: rgb(238 150 35 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F0F7FB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 247 251 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-\[0\.102\] {
   --tw-bg-opacity: 0.102;
 }
@@ -2422,6 +2406,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2480,11 +2469,6 @@ video {
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-14 {
@@ -2563,10 +2547,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2581,10 +2561,6 @@ video {
 
 .text-justify {
   text-align: justify;
-}
-
-.text-end {
-  text-align: end;
 }
 
 .align-bottom {
@@ -2931,18 +2907,6 @@ video {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.opacity-35 {
-  opacity: 0.35;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-20 {
-  opacity: 0.2;
 }
 
 .opacity-15 {
@@ -3546,10 +3510,6 @@ video {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:pt-9 {
-    padding-top: 2.25rem;
   }
 
   .md\:text-start {
