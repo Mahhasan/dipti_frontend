@@ -330,4 +330,8 @@
     right: -100%;
     transition: all linear 0.2s;
   }
+
+  #course-container button.active {
+    color: #1496E1;
+  }
 }

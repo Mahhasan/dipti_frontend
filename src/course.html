@@ -255,15 +255,81 @@
     <!-- section end -->
     
     <!------------ Section start ----------->
-    <section class="md:mt-20 mt-16">
+    <section class="md:mt-36 mt-20">
         <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
             <h2 class="font-inter font-medium text-2xl lg:text-3xl leading-35 text-Dark-moderate-blue text-center mx-auto">
                 Course Breakdown
             </h2>
-            <hr class="mt-5 lg:w-768 mx-auto" />
-            <div class="mt-12 flex items-center justify-center">
-                <img src="../dist/images/certificate.png" alt="Certificate Image" >
+            <div class="mt-51 gap-13 flex items-center justify-center">
+                <div class="relative px-10 box-border">
+                    <div class="tab flex overflow-x-scroll no-scrollbar gap-5 scroll-smooth snap-x" id="course-container">
+                        <button class="tablinks shrink-0 snap-start font-inter font-normal text-xl lg:text-28 leading-40 tracking-wide text-gray-5 hover:text-[#1496E1] trasition duration-150 active"
+                        onclick="openCategory(event, 'all')" id="defaultOpen">
+                        First Semester
+                        </button>
+
+                        <p class="text-3xl text-gray-5">/</p>
+
+                        <button class="tablinks shrink-0 snap-start font-inter font-normal text-xl lg:text-28 leading-40 tracking-wide text-gray-5 hover:text-[#1496E1] trasition duration-150"
+                        onclick="openCategory(event, 'secondSemester')">
+                        Second Semester
+                        </button>
+
+                        <p class="text-3xl text-gray-5">/</p>
+
+                        <button class="tablinks shrink-0 snap-start font-inter font-normal text-xl lg:text-28 leading-40 tracking-wide text-gray-5 hover:text-[#1496E1] trasition duration-150"
+                        onclick="openCategory(event, 'courseContent')">
+                        Course Content
+                        </button>
+        
+                    </div>
+                    <!-- Arrow btns -->
+                    <!-- <button id="slideBack" type="button" class="absolute top-3 left-0"></button> -->
+                    <button id="slide" type="button" class="absolute top-3 right-0"></button>
+                </div>
             </div>
+
+            <div class="mt-10">
+                <div id="all" class="tabcontent divide-y divide-[#3B55E6]/25 border-y border-[#3B55E6]/25">
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Java</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">JSP & Servlet</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">MySQL</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Real life Project</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                </div>
+          
+                <div id="secondSemester" class="tabcontent divide-y divide-[#3B55E6]/25 border-y border-[#3B55E6]/25">
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Java</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">JSP & Servlet</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">MySQL</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Real life Project</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                </div>
+          
+                <div id="courseContent" class="tabcontent divide-y divide-[#3B55E6]/25 border-y border-[#3B55E6]/25">
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Java</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">JSP & Servlet</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">MySQL</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Real life Project</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                  <p class="md:px-32 xl:px-80 py-5 font-pop font-normal text-base lg:text-xl lg:leading-15 text-primary-dark-blue borrder">Front-End Development using React</p>
+                </div>
+                <div class="flex items-center -mt-16 md:-mt-48 justify-end opacity-60 xl:opacity-100">
+                  <img src="../dist/images/career2.png" alt="login Image" class="">
+              </div>
+            </div>
+            
         </div>
     </section>
     <!------------- Section End ------------>
@@ -757,195 +823,240 @@
             </div>
         </div>
     </section>
-    <!-------------- FAQ section Start -------------------->
+    <!-------------- FAQ section End -------------------->
 
     <!-- ------------------ Footer Start ------------------ -->
-  <footer class="mt-200">
-    <a href="javascript:" id="return-to-top"
-      class="h-10 w-10 rounded-full bg-light-blue fixed z-999999 flex items-center justify-center right-5 bottom-5 transition-all ease-in-out duration-200 hover:bg-tertiary-orange">
-      <i class="ri-arrow-up-s-line text-black text-3xl"></i>
-    </a>
-  
-    <div class="max-w-container mx-auto px-4 lg:px-5 xl:px-0">
-      <div class="lg:flex mb-82">
-        <div class="lg:w-1/4 md:mx-auto w-full text-center sm:text-left mb-16 lg:mb-0">
-          <div class="w-82 mx-auto lg:ml-0">
-            <img src="../dist/images/dipti-orginal-logo.png" alt="dipti" class="w-full block" />
-          </div>
-  
-          <h6 class="lg:w-189 font-inter text-base font-medium text-secondary-dark-blue mt-12 text-center lg:text-left">
-            Daffodil International Professional Training Institute (DIPTI)
-          </h6>
-  
-          <div class="mt-12 flex justify-center lg:justify-start lg:gap-18 gap-10">
-            <a href="#"
-              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
-              <span class="fb-svg"></span>
-            </a>
-  
-            <a href="#"
-              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
-              <span class="tw-svg"></span>
-            </a>
-  
-            <a href="#"
-              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
-              <span class="li-svg"></span>
-            </a>
-  
-            <a href="#"
-              class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
-              <span class="yt-svg"></span>
-            </a>
-          </div>
+    <footer class="mt-200">
+        <a href="javascript:" id="return-to-top"
+        class="h-10 w-10 rounded-full bg-light-blue fixed z-999999 flex items-center justify-center right-5 bottom-5 transition-all ease-in-out duration-200 hover:bg-tertiary-orange">
+        <i class="ri-arrow-up-s-line text-black text-3xl"></i>
+        </a>
+    
+        <div class="max-w-container mx-auto px-4 lg:px-5 xl:px-0">
+        <div class="lg:flex mb-82">
+            <div class="lg:w-1/4 md:mx-auto w-full text-center sm:text-left mb-16 lg:mb-0">
+            <div class="w-82 mx-auto lg:ml-0">
+                <img src="../dist/images/dipti-orginal-logo.png" alt="dipti" class="w-full block" />
+            </div>
+    
+            <h6 class="lg:w-189 font-inter text-base font-medium text-secondary-dark-blue mt-12 text-center lg:text-left">
+                Daffodil International Professional Training Institute (DIPTI)
+            </h6>
+    
+            <div class="mt-12 flex justify-center lg:justify-start lg:gap-18 gap-10">
+                <a href="#"
+                class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+                <span class="fb-svg"></span>
+                </a>
+    
+                <a href="#"
+                class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+                <span class="tw-svg"></span>
+                </a>
+    
+                <a href="#"
+                class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+                <span class="li-svg"></span>
+                </a>
+    
+                <a href="#"
+                class="w-8 h-8 bg-light-sky rounded-full flex justify-center items-center hover:bg-blue-200 transition duration-150">
+                <span class="yt-svg"></span>
+                </a>
+            </div>
+            </div>
+            <div class="md:flex lg:w-3/4">
+            <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-7">
+                <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B]">
+                Important Links
+                </p>
+    
+                <ul class="mt-9">
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Training
+                    Programs</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Corporate
+                    partners</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Affiliation</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">CSR</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Job
+                    Facilities</a>
+                </li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
+                <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
+                Important Links
+                </p>
+    
+                <ul class="mt-9">
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Class
+                    Routine</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notice
+                    board</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Results
+                    board</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
+                    students of the year</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
+                    teachers of the year</a>
+                </li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
+                <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
+                Important Links
+                </p>
+    
+                <ul class="mt-9">
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Meet
+                    teacher’s</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Administration</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Students
+                    portal</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Skill
+                    Assessment</a>
+                </li>
+                <li class="mt-5">
+                    <a href="#"
+                    class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notes</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </div>
-        <div class="md:flex lg:w-3/4">
-          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-7">
-            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B]">
-              Important Links
-            </p>
-  
-            <ul class="mt-9">
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Training
-                  Programs</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Corporate
-                  partners</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Affiliation</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">CSR</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Job
-                  Facilities</a>
-              </li>
-            </ul>
-          </div>
-          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
-            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
-              Important Links
-            </p>
-  
-            <ul class="mt-9">
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Class
-                  Routine</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notice
-                  board</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Results
-                  board</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
-                  students of the year</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Best
-                  teachers of the year</a>
-              </li>
-            </ul>
-          </div>
-          <div class="md:w-1/3 w-full text-center lg:text-left lg:ml-32">
-            <p class="font-inter text-base tracking-wide font-medium text-[#8B8B8B] hidden md:block">
-              Important Links
-            </p>
-  
-            <ul class="mt-9">
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Meet
-                  teacher’s</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Administration</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Students
-                  portal</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Skill
-                  Assessment</a>
-              </li>
-              <li class="mt-5">
-                <a href="#"
-                  class="font-pop text-sm font-normal text-gray-3 hover:text-tertiary-orange transition duration-150">Notes</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="bg-light-sky">
-      <div class="max-w-container mx-auto px-4 lg:px-0">
-        <div class="md:flex py-69">
-          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
-            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
-              <span class="lo-svg"></span>
-            </p>
-  
-            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
-              Daffodil Plaza, 4/2, Sobhanbag, Mirpur Road, Dhaka-1207
-            </p>
-          </div>
-  
-          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
-            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
-              <span class="ph-svg"></span>
-            </p>
-  
-            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
-              01713-493233, 01713-493288, 01713-493267
-            </p>
-          </div>
-  
-          <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
-            <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
-              <span class="em-svg"></span>
-            </p>
-  
-            <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
-              info@dipti.com.bd
-            </p>
-          </div>
+    
+        <div class="bg-light-sky">
+        <div class="max-w-container mx-auto px-4 lg:px-0">
+            <div class="md:flex py-69">
+            <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+                <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+                <span class="lo-svg"></span>
+                </p>
+    
+                <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+                Daffodil Plaza, 4/2, Sobhanbag, Mirpur Road, Dhaka-1207
+                </p>
+            </div>
+    
+            <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+                <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+                <span class="ph-svg"></span>
+                </p>
+    
+                <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+                01713-493233, 01713-493288, 01713-493267
+                </p>
+            </div>
+    
+            <div class="md:w-1/3 flex flex-col items-center mb-10 lg:mb-0">
+                <p class="w-35 h-35 rounded-full bg-secondary-dark-blue flex justify-center items-center">
+                <span class="em-svg"></span>
+                </p>
+    
+                <p class="text-center w-255 mt-8 font-pop text-sm font-normal text-secondary-dark-blue leading-relaxed">
+                info@dipti.com.bd
+                </p>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="bg-[#1C1C1C] px-4 lg:px-0 md:px-20">
-      <p class="text-center font-pop text-[#8B8B8B] text-sm tracking-wide py-7">
-        Copyright © 2004-2024 Daffodil International Professional Training
-        Institute (DIPTI). All Rights Reserved.
-      </p>
-    </div>
-  </footer>
-  <!-- ------------------ Footer End ------------------ -->
+        </div>
+    
+        <div class="bg-[#1C1C1C] px-4 lg:px-0 md:px-20">
+        <p class="text-center font-pop text-[#8B8B8B] text-sm tracking-wide py-7">
+            Copyright © 2004-2024 Daffodil International Professional Training
+            Institute (DIPTI). All Rights Reserved.
+        </p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End ------------------ -->
 
 
     <script>
+        function openCategory(evt, categoryName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(categoryName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        // Category Scroll
+        var button = document.getElementById("slide");
+        button.onclick = function () {
+            var container = document.getElementById("course-container");
+            sideScroll(container, "right", 200, 400, 400);
+        };
+
+        var back = document.getElementById("slideBack");
+        back.onclick = function () {
+            var container = document.getElementById("course-container");
+            sideScroll(container, "left", 200, 400, 400);
+        };
+
+        function sideScroll(element, direction, speed, distance, step) {
+            scrollAmount = 0;
+            var slideTimer = setInterval(function () {
+                if (direction == "left") {
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if (scrollAmount >= distance) {
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+
+
         // ===== Return to Top ====
         // Detect scroll events
         window.addEventListener("scroll", function () {
