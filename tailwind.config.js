@@ -59,6 +59,7 @@ module.exports = {
         "Dark-moderate-blue": "#2A3073",
         "dim-Gray": "#707070",
         "grim-reaper": "#100B33",
+        "blue-3": "#D5D5D5"
       },
       width: {
         "5p": "5%",

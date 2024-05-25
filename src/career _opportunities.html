@@ -4,11 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
+  <title>Career Opportunity</title>
   <link rel="stylesheet" href="../src/css/tiny-slider.css" />
   <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- cdn for center mode slider -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="../src/css/slider.css" />
+
+  <style>
+    .step-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .step-line {
+        position: absolute;
+        top: 50%;
+        left: calc(6rem / 2); /* Start from the end of the first circle */
+        width: calc(100% - 6rem); /* Width minus the diameters of the two circles */
+        height: 2px;
+        background-color: #EE6A23; /* Light gray line color */
+        z-index: -1;
+        opacity: 50%;
+    }
+  </style>
+
 </head>
 
 <body class="bg-white">
@@ -92,54 +118,221 @@
   <!-- ------------------ About Section Start ------------------ -->
   <section class="lg:mt-36 mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-      <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto lg:max-w-5xl font-bold">
-          Welcome to Daffodil International Professional Training Institute (DIPTI)
+        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
+        Career Opportunities
       </h2>
-      <div class="lg:mt-14 mt-6">
-        <p class="font-pop font-normal text-base leading-7 lg:leading-35 gray-1 text-justify text-gray-1">
-          It is fact that, Bangladesh has huge workforces and it will be a great benefit for Bangladesh economy if quality and standard professionals can be developed through comprehensive real life practical job-oriented training. Even today, most of the industries in Bangladesh rely on foreign workers for their technological consultation and also for implementation; which is slowing down our economic growth in this emerging world. It, therefore, has become very essential to develop skilled manpower in order to promote more businesses to attract foreign investment even produce quality products. This question encouraged us to establish Daffodil International Professional Training Institute (DIPTI). So, DIPTI will work on this concerned field to help to the educated but unemployed; also, to help to the professionals to develop their professionalism and establish their career.
-        </p>
+      <div class="mt-10 lg:mt-14 lg:flex flex-wrap items-center justify-center">
+        <div class="lg:w-3/5">
+            <h3 class="font-inter font-bold lg:text-33 text-xl leading-72 text-Dark-moderate-blue">Noble Career and Meaningful Impact</h3>
+            <p class="mt-6 slg:mt-10 font-pop font-normal text-base leading-28 text-justify">Explore the possibilities of a career that embraces your unique talents, aspirations, and expertise, guiding you from where you are to where you envision yourself. Experience the power of being recognized and valued for your individuality, and the contributions you bring. Uncover your potential and influence at DIPTI.</p>
+        </div>
+        <div class="lg:w-2/5 mt-14 lg:mt-0 flex items-center justify-center lg:justify-end relative">
+            <img src="../dist/images/career3.png" alt="career3" class="" />
+        </div>
       </div>
     </div>
-    <div class="lg:max-w-container-large mx-auto px-4 mt-9 lg:mt-20 md:max-w-container-md">
-      <h2 class="font-inter text-2xl lg:text-3xl leading-35 text-Dark-moderate-blue text-center mx-auto lg:max-w-4xl">
-          Our Vision
-      </h2>
-      <div class="lg:mt-12 mt-6">
-        <p class="font-pop font-normal text-base leading-7 lg:leading-35 gray-1 text-justify text-gray-1">
-          The vision of DIPTI is to be the number one choice for job-oriented training for our huge pool of manpower as per market demand.                      </p>
-        </p>
+  </section>
+  <!-- ------------------ About Section End ------------------ -->
+
+  <!-- ------------------ Facility Section Start ------------------ -->
+  <section class="mt-20">
+    <div class="max-w-container-large mx-auto px-4 lg:px-0">
+        <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-Dark-moderate-blue text-center mx-auto font-bold">
+            Explore Opportuniteies in Every Stage of Your Career
+        </h2>
+      <div class="mt-12 md:flex gap-18 lg:px-4">
+        <div class="md:w-1/3 w-full mb-5 lg:mb-0">
+          <a href="#">
+            <div
+              class="bg-white p-3 lg:p-4 rounded-18 border border-light-sky group hover:shadow-category transition duration-200 flex gap-22">
+              <div
+                class="bg-light-blue/[.23] lg:h-82 lg:w-82 h-74 w-74 rounded-11 shrink-0 flex justify-center items-center">
+                <img src="../dist/images/icons/scholarship-3.png" alt="scholarship" class="lg:h-46 h-10 w-auto block" />
+              </div>
+
+              <div class="self-start">
+                <h3
+                  class="block category-name font-inter lg:text-lg text-md font-semibold tracking-wide leading-5 text-gray-3 group-hover:text-tertiary-orange transition duration-200">
+                  Experienced Hire
+                </h3>
+
+                <p class="lg:mt-22 mt-3 lg:text-sm text-13 font-pop text-gray-3 line-clamp-2">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="md:w-1/3 w-full mb-5 lg:mb-0">
+          <a href="#">
+            <div
+              class="bg-white p-3 lg:p-4 rounded-18 border border-light-sky group hover:shadow-category transition duration-200 flex gap-22">
+              <div
+                class="bg-light-yellow/[.38] lg:h-82 lg:w-82 h-74 w-74 rounded-11 shrink-0 flex justify-center items-center">
+                <img src="../dist/images/icons/scholarship-4.png" alt="job" class="h-46 w-auto block" />
+              </div>
+
+              <div class="self-start">
+                <h3
+                  class="block category-name font-inter lg:text-lg text-md font-semibold tracking-wide leading-5 text-gray-3 group-hover:text-tertiary-orange transition duration-200">
+                  Internship
+                </h3>
+
+                <p class="lg:mt-22 mt-3 lg:text-sm text-13 font-pop text-gray-3 line-clamp-2">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="md:w-1/3 w-full mb-5 lg:mb-0">
+          <a href="#">
+            <div
+              class="bg-white p-3 lg:p-4 rounded-18 border border-light-sky group hover:shadow-category transition duration-200 flex gap-22">
+              <div
+                class="icon-box bg-light-lemon/[.28] lg:h-82 lg:w-82 h-74 w-74 rounded-11 shrink-0 flex justify-center items-center">
+                <img src="../dist/images/icons/scholarship-5.png" alt="support" class="h-46 w-auto block" />
+              </div>
+
+              <div class="self-start">
+                <h3
+                  class="block category-name font-inter lg:text-lg text-md font-semibold tracking-wide leading-5 text-gray-3 group-hover:text-tertiary-orange transition duration-200">
+                  Additional Recruitment
+                </h3>
+
+                <p class="lg:mt-22 mt-3 lg:text-sm text-13 font-pop text-gray-3 line-clamp-2">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="lg:max-w-container-large mx-auto px-4 mt-9 lg:mt-20 md:max-w-container-md">
-      <h2 class="font-inter text-2xl lg:text-3xl leading-35 text-Dark-moderate-blue text-center mx-auto lg:max-w-4xl">
-          Our Mission
+  </section>
+  <!-- ------------------ Facility Section End ------------------ -->
+
+<!-- Recruitment Process Section -->
+<section class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
+            Our Recruitment Process
       </h2>
-      <div class="lg:mt-12 mt-6">
-        <p class="font-pop font-normal text-base leading-7 lg:leading-35 gray-1 text-justify text-gray-1">
-          DIPTI will provide a very wide range of job-oriented and professional development training for both skilled and unskilled people to a human resource. These courses offer the opportunity for practitioners, individuals, businessmen, and employees to refresh to expand and enhance their IT & Animation skills/ professionalism. Professional Development Programs offer more than just a traditional learning experience. All the courses run by DIPTI will be experiential, challenging, interactive, and bridging academic theory and the real world of practice that will new work experience. DIPTI will surely bring appropriate knowledge to deal with potential measures, and help workers to improve working conditions, and encompass the maintenance and promotion of workers’ work performance.
-        </p>
+      <div class="relative flex justify-between items-center w-2/3 mx-auto">
+        <div class="step-line"></div> <!-- Line connecting steps -->
+        <!-- Step 1 -->
+        <div class="mt-11 step-container">
+          <div class="bg-Dark-moderate-blue text-blue-3 w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">1</div>
+          <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Meet Us</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="mt-11 step-container">
+          <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">2</div>
+          <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Job Search</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="mt-11 step-container">
+            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">3</div>
+            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Apply</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="mt-11 step-container">
+            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">4</div>
+            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10 flex items-center justify-center">Resume Review</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="mt-11 step-container">
+            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">5</div>
+            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Interview</p>
+        </div>
+        <!-- Step 6 -->
+        <div class="mt-11 step-container">
+            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">6</div>
+            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Offer</p>
+        </div>
+        <!-- Step 7 -->
+        <div class="mt-11 step-container">
+            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">7</div>
+            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Keep In Touch</p>
+        </div>
       </div>
     </div>
-    <div class="lg:max-w-container-large mx-auto px-4 mt-9 lg:mt-20 md:max-w-container-md">
-      <h2 class="font-inter text-2xl lg:text-3xl leading-35 text-Dark-moderate-blue text-center mx-auto lg:max-w-4xl">
-        Legal Documents
+  </section>
+
+
+  <!-- ------------------ About Section Start ------------------ -->
+  <!-- <section class="mt-20">
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
+            Our Recruitment Process
       </h2>
-      <div class="lg:mt-12 mt-6">
-        <p class="font-pop font-normal text-base leading-7 lg:leading-35 gray-1 text-justify text-gray-1">
-          DIPTI will provide a very wide range of job-oriented and professional development training for both skilled and unskilled people to a human resource. These courses offer the opportunity for practitioners, individuals, businessmen, and employees to refresh to expand and enhance their IT & Animation skills/ professionalism. Professional Development Programs offer more than just a traditional learning experience. All the courses run by DIPTI will be experiential, challenging, interactive, and bridging academic theory and the real world of practice that will new work experience. DIPTI will surely bring appropriate knowledge to deal with potential measures, and help workers to improve working conditions, and encompass the maintenance and promotion of workers’ work performance.
-        </p>
+        <div class="mt-12">
+            <div class="">
+                <hr class="w-full border border-tertiary-orange"/>
+                <div class="-mt-11 absolute">
+                    <div class="bg-blue-800 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto text-lg font-bold">1</div>
+                    <p class="mt-2 text-gray-800 flex items-center justify-center">Meet Us</p>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
-    <div class="lg:max-w-container-large mx-auto px-4 mt-9 lg:mt-20 md:max-w-container-md">
-      <h2 class="font-inter text-2xl lg:text-3xl leading-35 text-Dark-moderate-blue text-center mx-auto lg:max-w-4xl">
-        Discover Daffodil Family
+  </section> -->
+  <!-- ------------------ About Section End ------------------ -->
+
+    <!-- ------------------ About Section Start ------------------ -->
+    <section class="mt-20">
+        <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+            <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-gray-3 text-center mx-auto font-bold">
+                What Makes DIPTI a Great Place to Work
+            </h2>
+            <div class="mt-8">
+                <p class="font-pop font-normal text-base leading-28 text-justify text-gray-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ About Section End ------------------ -->
+
+<!-- ------------------ About Section Start ------------------ -->
+<section class="mt-20">
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
+        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
+            Life at DIPTI
       </h2>
-      <div class="lg:mt-12 mt-6">
-        <p class="font-pop font-normal text-base leading-7 lg:leading-35 gray-1 text-justify text-gray-1">
-          Daffodil Family encompasses over 40 concerns in four different arena-ICT, Education,Entrepreneurship and Hospital sectors. The Group is operating in major divisions and cosmopolitan areas in Bangladesh and started its operation in International dome. Today the group has started operation in UK, USA, Malaysia and Dubai and also has network and links worldwide. As the company is growing and increasing international footprint, the brand is also gaining international recognition. Every concern of Daffodil Family operates independently and each of these companies has its own board lead by directors. Daffodil Family is focusing on new technologies and innovation in thoughts, processes, approaches and strategies to excel in business and service arena and also returning wealth to the society we serve.
-        </p>
+      <div class="mt-14">  
+        <div class="slider">
+          
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event3.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event5.png" alt="event image">          
+          </div>
+          <div class="item">
+            <img src="../dist/images/event/event4.png" alt="event image">          
+          </div>
+        </div>
       </div>
+       <div class="mt-10">
+            <p class="font-pop font-normal text-base leading-28 text-justify text-gray-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
     </div>
   </section>
   <!-- ------------------ About Section End ------------------ -->
@@ -330,6 +523,43 @@
   <!-- ------------------ Footer End ------------------ -->
 
   <script> 
+  // for center mode slider
+  $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        variableWidth: true,
+        infinite: true,
+        focusOnSelect: true,
+        cssEase: 'linear',
+        touchMove: true,
+        prevArrow:'<button class="slick-prev"> </button>',
+        nextArrow:'<button class="slick-next"> </button>',
+        
+                // responsive: [                        
+                //     {
+                //       breakpoint: 412,
+                //       settings: {
+                //         centerMode: false,
+                //         variableWidth: false,
+                //       }
+                //     },
+                // ]
+      });
+
+      var imgs = $('.slider img');
+    imgs.each(function(){
+      var item = $(this).closest('.item');
+      item.css({
+        'background-image': 'url(' + $(this).attr('src') + ')', 
+        'background-position': 'center',            
+        '-webkit-background-size': 'cover',
+        'background-size': 'cover', 
+      });
+      $(this).hide();
+    });
     // ===== Return to Top ====
     // Detect scroll events
     window.addEventListener("scroll", function () {

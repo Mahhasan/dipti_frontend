@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recruitment Process</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .step-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .step-line {
+        position: absolute;
+        top: 50%;
+        left: calc(6rem / 2); /* Start from the end of the first circle */
+        width: calc(100% - 6rem); /* Width minus the diameters of the two circles */
+        height: 2px;
+        background-color: #EE6A23; /* Light gray line color */
+        z-index: -1;
+        opacity: 50%;
+    }
+  </style>
+</head>
+<body class="bg-white font-inter">
+
+  <!-- Recruitment Process Section -->
+  <section class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Our Recruitment Process</h2>
+      <div class="relative flex justify-between items-center w-2/3 mx-auto">
+        <div class="step-line"></div> <!-- Line connecting steps -->
+        <!-- Step 1 -->
+        <div class="mt-6 step-container">
+          <div class="bg-Dark-moderate-blue text-white w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">1</div>
+          <p class="mt-2 text-gray-800 text-sm">Meet Us</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-blue-800 w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">2</div>
+          <p class="mt-2 text-gray-800 text-sm">Job Search</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-blue-800 w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">3</div>
+          <p class="mt-2 text-gray-800 text-sm">Apply</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-blue-800 w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">4</div>
+          <p class="mt-2 text-gray-800 text-sm">Resume Review</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-blue-800 w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">5</div>
+          <p class="mt-2 text-gray-800 text-sm">Interview</p>
+        </div>
+        <!-- Step 6 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-blue-800 w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">6</div>
+          <p class="mt-2 text-gray-800 text-sm">Offer</p>
+        </div>
+        <!-- Step 7 -->
+        <div class="mt-6 step-container">
+          <div class="bg-blue-100 text-moda w-20 h-20 rounded-full flex items-center justify-center text-lg font-bold z-10">7</div>
+          <p class="mt-2 text-gray-800 text-sm">Keep In Touch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
