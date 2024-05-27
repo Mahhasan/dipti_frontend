@@ -1,3 +1,4 @@
+<!--please add this css-- "input.css 339-354" -->
 <!doctype html>
 <html lang="en">
 
@@ -15,26 +16,6 @@
 
   <link rel="stylesheet" href="../dist/output.css" />
   <link rel="stylesheet" href="../src/css/slider.css" />
-
-  <style>
-    .step-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .step-line {
-        position: absolute;
-        top: 50%;
-        left: calc(6rem / 2); /* Start from the end of the first circle */
-        width: calc(100% - 6rem); /* Width minus the diameters of the two circles */
-        height: 2px;
-        background-color: #EE6A23; /* Light gray line color */
-        z-index: -1;
-        opacity: 50%;
-    }
-  </style>
-
 </head>
 
 <body class="bg-white">
@@ -123,8 +104,8 @@
       </h2>
       <div class="mt-10 lg:mt-14 lg:flex flex-wrap items-center justify-center">
         <div class="lg:w-3/5">
-            <h3 class="font-inter font-bold lg:text-33 text-xl leading-72 text-Dark-moderate-blue">Noble Career and Meaningful Impact</h3>
-            <p class="mt-6 slg:mt-10 font-pop font-normal text-base leading-28 text-justify">Explore the possibilities of a career that embraces your unique talents, aspirations, and expertise, guiding you from where you are to where you envision yourself. Experience the power of being recognized and valued for your individuality, and the contributions you bring. Uncover your potential and influence at DIPTI.</p>
+            <h3 class="font-inter font-bold lg:text-33 text-xl lg:leading-72 text-Dark-moderate-blue">Noble Career and Meaningful Impact</h3>
+            <p class="mt-6 lg:mt-10 font-pop font-normal text-base leading-28 text-justify">Explore the possibilities of a career that embraces your unique talents, aspirations, and expertise, guiding you from where you are to where you envision yourself. Experience the power of being recognized and valued for your individuality, and the contributions you bring. Uncover your potential and influence at DIPTI.</p>
         </div>
         <div class="lg:w-2/5 mt-14 lg:mt-0 flex items-center justify-center lg:justify-end relative">
             <img src="../dist/images/career3.png" alt="career3" class="" />
@@ -214,83 +195,62 @@
   </section>
   <!-- ------------------ Facility Section End ------------------ -->
 
-<!-- Recruitment Process Section -->
-<section class="py-16">
-    <div class="container mx-auto text-center">
-        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
-            Our Recruitment Process
+  <!-- Recruitment Process Section -->
+  <section class="mt-20">
+    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-10 xl:px-20 md:max-w-container-md">
+      <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-gray-3 text-center mx-auto font-bold">
+        Our Recruitment Process
       </h2>
-      <div class="relative flex justify-between items-center w-2/3 mx-auto">
-        <div class="step-line"></div> <!-- Line connecting steps -->
-        <!-- Step 1 -->
-        <div class="mt-11 step-container">
-          <div class="bg-Dark-moderate-blue text-blue-3 w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">1</div>
-          <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Meet Us</p>
+      <div class="mt-12 relative flex justify-between mx-auto gap-2 sm:gap-0">
+        <div class="career-step-line top-4 sm:top-6 lg:top-10"></div> 
+        <div class="career-step-container w-139">
+          <div class="bg-Dark-moderate-blue text-blue-3 w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">1</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Meet Us</p>
         </div>
-        <!-- Step 2 -->
-        <div class="mt-11 step-container">
-          <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">2</div>
-          <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Job Search</p>
+
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">2</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Job Search</p>
         </div>
-        <!-- Step 3 -->
-        <div class="mt-11 step-container">
-            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">3</div>
-            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Apply</p>
+
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue  w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">3</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Apply</p>
         </div>
-        <!-- Step 4 -->
-        <div class="mt-11 step-container">
-            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">4</div>
-            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10 flex items-center justify-center">Resume Review</p>
+
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">4</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Resume Review</p>
         </div>
-        <!-- Step 5 -->
-        <div class="mt-11 step-container">
-            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">5</div>
-            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Interview</p>
+    
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue  w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">5</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Interview</p>
         </div>
-        <!-- Step 6 -->
-        <div class="mt-11 step-container">
-            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">6</div>
-            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Offer</p>
+    
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">6</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Offer</p>
         </div>
-        <!-- Step 7 -->
-        <div class="mt-11 step-container">
-            <div class="bg-light-sky text-Dark-moderate-blue w-20 h-20 rounded-full flex items-center justify-center text-2xl lg:text-33 font-pop lg:leading-72 font-normal z-10">7</div>
-            <p class="mt-2 text-black text-18 font-pop font-normal leading-28 lg:leading-10">Keep In Touch</p>
+
+        <div class="career-step-container w-139">
+          <div class="bg-light-sky text-Dark-moderate-blue  w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 rounded-full flex items-center justify-center text-xl lg:text-33 font-pop lg:leading-72 font-normal z-10">7</div>
+          <p class="mt-2 text-black text-xs sm:text-sm lg:text-18 font-pop font-normal leading-28 xl:leading-10 text-center">Keep In Touch</p>
         </div>
       </div>
     </div>
   </section>
-
-
-  <!-- ------------------ About Section Start ------------------ -->
-  <!-- <section class="mt-20">
-    <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
-            Our Recruitment Process
-      </h2>
-        <div class="mt-12">
-            <div class="">
-                <hr class="w-full border border-tertiary-orange"/>
-                <div class="-mt-11 absolute">
-                    <div class="bg-blue-800 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto text-lg font-bold">1</div>
-                    <p class="mt-2 text-gray-800 flex items-center justify-center">Meet Us</p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ------------------ About Section End ------------------ -->
+  <!-- Section End -->
 
     <!-- ------------------ About Section Start ------------------ -->
     <section class="mt-20">
         <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-            <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-gray-3 text-center mx-auto font-bold">
-                What Makes DIPTI a Great Place to Work
-            </h2>
-            <div class="mt-8">
-                <p class="font-pop font-normal text-base leading-28 text-justify text-gray-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+          <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-gray-3 text-center mx-auto font-bold">
+            What Makes DIPTI a Great Place to Work
+          </h2>
+          <div class="mt-8">
+            <p class="font-pop font-normal text-base leading-28 text-justify text-gray-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
         </div>
     </section>
     <!-- ------------------ About Section End ------------------ -->
@@ -298,8 +258,8 @@
 <!-- ------------------ About Section Start ------------------ -->
 <section class="mt-20">
     <div class="lg:max-w-container mx-auto px-4 md:px-0 lg:px-5 xl:px-0 md:max-w-container-md">
-        <h2 class="font-inter lg:text-42 text-2xl lg:leading-72 text-primary-dark-blue text-center mx-auto font-bold">
-            Life at DIPTI
+      <h2 class="font-inter lg:text-33 text-2xl lg:leading-72 text-gray-3 text-center mx-auto font-bold">
+        Life at DIPTI
       </h2>
       <div class="mt-14">  
         <div class="slider">
@@ -525,31 +485,31 @@
   <script> 
   // for center mode slider
   $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        centerMode: true,
-        variableWidth: true,
-        infinite: true,
-        focusOnSelect: true,
-        cssEase: 'linear',
-        touchMove: true,
-        prevArrow:'<button class="slick-prev"> </button>',
-        nextArrow:'<button class="slick-next"> </button>',
-        
-                // responsive: [                        
-                //     {
-                //       breakpoint: 412,
-                //       settings: {
-                //         centerMode: false,
-                //         variableWidth: false,
-                //       }
-                //     },
-                // ]
-      });
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    centerMode: true,
+    variableWidth: true,
+    infinite: true,
+    focusOnSelect: true,
+    cssEase: 'linear',
+    touchMove: true,
+    prevArrow:'<button class="slick-prev"> </button>',
+    nextArrow:'<button class="slick-next"> </button>',
+    
+            // responsive: [                        
+            //     {
+            //       breakpoint: 412,
+            //       settings: {
+            //         centerMode: false,
+            //         variableWidth: false,
+            //       }
+            //     },
+            // ]
+  });
 
-      var imgs = $('.slider img');
+  var imgs = $('.slider img');
     imgs.each(function(){
       var item = $(this).closest('.item');
       item.css({

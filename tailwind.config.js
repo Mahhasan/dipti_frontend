@@ -59,7 +59,8 @@ module.exports = {
         "Dark-moderate-blue": "#2A3073",
         "dim-Gray": "#707070",
         "grim-reaper": "#100B33",
-        "blue-3": "#D5D5D5"
+        "blue-3": "#D5D5D5",
+        "pink": "#FF9AEE",
       },
       width: {
         "5p": "5%",
@@ -88,6 +89,7 @@ module.exports = {
         130: "130px",
         134: "134px",
         137: "137px",
+        139: "139px",
         167: "167px",
         189: "189px",
         206: "206px",
@@ -249,6 +251,7 @@ module.exports = {
       },
       lineHeight: {
         15: "15px",
+        18: "18px",
         22: "22px",
         25: "25px",
         26: "26px",

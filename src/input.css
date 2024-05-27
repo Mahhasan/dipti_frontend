@@ -335,3 +335,20 @@
     color: #1496E1;
   }
 }
+
+/* css fo recruitment process in career opportinity page */
+.career-step-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.career-step-line {
+  position: absolute;
+  left: calc(4rem / 2); /* Start from the end of the first circle */
+  width: calc(100% - 4rem); /* Width minus the diameters of the two circles */
+  height: 2px;
+  background-color: #EE6A23;
+  z-index: -1;
+  opacity: 50%;
+}
