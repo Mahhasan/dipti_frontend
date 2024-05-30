@@ -873,6 +873,10 @@ video {
   left: 50%;
 }
 
+.left-1\/4 {
+  left: 25%;
+}
+
 .left-117 {
   left: 117px;
 }
@@ -889,8 +893,16 @@ video {
   left: 5rem;
 }
 
+.left-22p {
+  left: 22%;
+}
+
 .left-27 {
   left: 27px;
+}
+
+.left-30p {
+  left: 30%;
 }
 
 .left-320 {
@@ -913,8 +925,20 @@ video {
   left: 1.25rem;
 }
 
+.left-57p {
+  left: 57%;
+}
+
 .left-6 {
   left: 1.5rem;
+}
+
+.left-60p {
+  left: 60%;
+}
+
+.left-64p {
+  left: 64%;
 }
 
 .left-8 {
@@ -947,6 +971,10 @@ video {
 
 .right-24 {
   right: 6rem;
+}
+
+.right-36 {
+  right: 9rem;
 }
 
 .right-5 {
@@ -985,8 +1013,20 @@ video {
   top: 2.5rem;
 }
 
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-150 {
+  top: 150px;
+}
+
 .top-16 {
   top: 4rem;
+}
+
+.top-20 {
+  top: 5rem;
 }
 
 .top-24 {
@@ -997,8 +1037,16 @@ video {
   top: 24%;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
 .top-3 {
   top: 0.75rem;
+}
+
+.top-30p {
+  top: 30%;
 }
 
 .top-4 {
@@ -1007,6 +1055,10 @@ video {
 
 .top-44 {
   top: 11rem;
+}
+
+.top-46p {
+  top: 46%;
 }
 
 .top-49p {
@@ -1035,6 +1087,10 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.top-40p {
+  top: 40%;
 }
 
 .-z-0 {
@@ -1096,11 +1152,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
 }
 
 .-mb-px {
@@ -1500,6 +1551,10 @@ video {
   height: 1.5rem;
 }
 
+.h-60 {
+  height: 60px;
+}
+
 .h-74 {
   height: 74px;
 }
@@ -1526,10 +1581,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-60 {
-  height: 60px;
 }
 
 .max-h-170 {
@@ -1712,6 +1763,10 @@ video {
   width: 1.5rem;
 }
 
+.w-60 {
+  width: 60px;
+}
+
 .w-60p {
   width: 60%;
 }
@@ -1762,14 +1817,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4\/5 {
-  width: 80%;
-}
-
-.w-60 {
-  width: 60px;
 }
 
 .max-w-347 {
@@ -2056,6 +2103,10 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-30 {
+  border-radius: 30px;
 }
 
 .rounded-3xl {
@@ -3552,12 +3603,20 @@ video {
     width: 50%;
   }
 
+  .sm\:w-1\/4 {
+    width: 25%;
+  }
+
   .sm\:w-11\/12 {
     width: 91.666667%;
   }
 
   .sm\:w-12 {
     width: 3rem;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
   }
 
   .sm\:w-381 {
@@ -3574,14 +3633,6 @@ video {
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:w-1\/4 {
-    width: 25%;
-  }
-
-  .sm\:w-3\/4 {
-    width: 75%;
   }
 
   .sm\:flex-wrap {
@@ -4489,6 +4540,10 @@ video {
 
   .xl\:w-3\/5 {
     width: 60%;
+  }
+
+  .xl\:w-333 {
+    width: 333px;
   }
 
   .xl\:w-506 {
