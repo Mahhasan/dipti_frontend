@@ -7,10 +7,17 @@ module.exports = {
         container: "1156px",
         "container-large": "1188px",
         "container-md": "768px",
-        525: "525px",
-        457: "457px",
+        344: "344px",
         347: "347px",
+        420: "420px",
+        457: "457px",
+        498: "498px",
+        525: "525px",
         842: "842px",
+        
+      },
+      minWidth: {
+        "420px": "420px",
       },
       fontFamily: {
         'pop': ["Poppins"],
