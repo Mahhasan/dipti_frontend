@@ -271,6 +271,7 @@ module.exports = {
         30: "30px",
         116: "116px",
         213: "231px",
+        452: "452px",
       },
       backdropBrightness: {
         32: '.32',
