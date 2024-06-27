@@ -60,6 +60,8 @@ module.exports = {
         "light-sky": "#E9F5FC",
         "light-blue": "#71CBFF",
         "blue-2": "#5BC3FF",
+        "blue-3": "#D5D5D5",
+        "light-cornflower-blue": "#9ED3F2",
         "dark-yellow": "#EECC23",
         "yellow-2": "#FCC211",
         "yellow-3": "#ee9623",
@@ -72,8 +74,8 @@ module.exports = {
         "Dark-moderate-blue": "#2A3073",
         "dim-Gray": "#707070",
         "grim-reaper": "#100B33",
-        "blue-3": "#D5D5D5",
         "pink": "#FF9AEE",
+        "ghost-white": "#F6F5FB",
       },
       width: {
         "5p": "5%",
