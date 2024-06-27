@@ -2090,6 +2090,12 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -4681,6 +4687,10 @@ video {
     width: 24rem;
   }
 
+  .xl\:max-w-286 {
+    max-width: 286px;
+  }
+
   .xl\:max-w-306 {
     max-width: 306px;
   }
@@ -4699,6 +4709,10 @@ video {
 
   .xl\:gap-85 {
     gap: 85px;
+  }
+
+  .xl\:gap-y-16 {
+    row-gap: 4rem;
   }
 
   .xl\:gap-y-20 {
@@ -4730,6 +4744,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:max-w-350 {
+    max-width: 350px;
+  }
+
   .\32xl\:max-w-370 {
     max-width: 370px;
   }
