@@ -352,3 +352,24 @@
   z-index: -1;
   opacity: 50%;
 }
+/* End */
+
+/* CSS for filter button in */
+.custom-select-icon {
+  position: relative;
+}
+.custom-select-icon select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 2.5rem; /* Adjust the padding to fit the icon */
+  cursor: pointer; /* Change cursor to pointer */
+}
+.custom-select-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem; /* Adjust the left position as needed */
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+/* End */

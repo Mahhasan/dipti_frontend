@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select with Icon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .custom-select-icon {
+            position: relative;
+        }
+        .custom-select-icon select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-left: 2.5rem; /* Adjust the padding to fit the icon */
+        }
+        .custom-select-icon svg {
+            position: absolute;
+            top: 50%;
+            left: 0.75rem; /* Adjust the left position as needed */
+            pointer-events: none;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-select-icon inline-block">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6h-2m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4"/>
+        </svg>
+        <select class="pl-10 pr-4 block text-sm font-medium transition duration-75 border border-gray-800 rounded-lg shadow-sm h-9 focus:border-blue-600 focus:ring-1 focus:ring-inset focus:ring-blue-600 bg-none">
+            <option value="week">A to Z</option>
+            <option value="month">Last Month</option>
+            <option value="year">Last year</option>
+        </select>
+    </div>
+</body>
+</html>
