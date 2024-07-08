@@ -359,11 +359,11 @@
   position: relative;
 }
 .custom-select-icon select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 2.5rem; /* Adjust the padding to fit the icon */
-  cursor: pointer; /* Change cursor to pointer */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  padding-left: 2.5rem !important;
+  cursor: pointer !important;
 }
 .custom-select-icon svg {
   position: absolute;
