@@ -1,23 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select with Icon</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/output.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nav Test</title>
+  <link rel="stylesheet" href="../src/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../src/css/sweetalert2.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <style>
+    /* Additional styles for the dropdown menu */
+    .dropdown-menu,
+    .sub-dropdown-menu {
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown-menu-item:hover .sub-dropdown-menu {
+      display: block;
+    }
+
+    /* For Mobile Menu */
+    #mobile-menu .dropdown>a::after {
+      content: '\25BC';
+      float: right;
+    }
+
+    #mobile-menu .dropdown-menu {
+      display: none;
+    }
+
+    #mobile-menu .dropdown.open .dropdown-menu {
+      display: block;
+    }
+  </style>
 </head>
-<body>
-    <div class="custom-select-icon inline-block">
-        <svg class="w-6 h-6 text-tertiary-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6h-2m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4"/>
-        </svg>
-        <select class="pr-1 block text-sm font-medium transition duration-75 border border-tertiary-orange rounded-lg h-9 focus:border-tertiary-orange focus:ring-1 focus:ring-inset focus:ring-tertiary-orange bg-white">
-            <option value="">Filter</option>
-            <option value="week">A to Z</option>
-            <option value="month">Last Month</option>
-            <option value="year">Last year</option>
-        </select>
-    </div>
+
+<body class="bg-white">
+  <section class="overflow-hidden">
+    <!-- ------------------ Nav Start ------------------ -->
+    <nav class="py-4 lg:py-0 lg:absolute w-full fixed bg-white z-999999 lg:z-auto shadow-md">
+      <div class="lg:max-w-container lg:px-5 xl:px-0 md:mx-auto mx-4 md:max-w-container-md">
+        <div class="flex justify-between items-center">
+          <div class="lg:w-15p w-14">
+            <a href="index.html">
+              <img src="../dist/images/dipti-logo.png" alt="dipti-logo" class="block w-70" />
+            </a>
+          </div>
+
+          <div class="hidden lg:flex w-65 justify-center gap-10 relative z-999999">
+            <a href="#" class="lg:py-8 font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">About Us</a>
+            <div class="lg:py-8 dropdown relative flex items-center">
+              <a href="#" class="font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Courses</a>
+              <svg class="w-5 h-5 text-gray-2 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6" />
+              </svg>
+              <div class="dropdown-menu absolute bg-white shadow-lg rounded-b-lg mt-208  w-48">
+                <a href="#" class="font-pop block px-4 py-2 text-gray-700 hover:bg-gray-200 transition duration-150">Course 1</a>
+                <a href="#" class="font-pop block px-4 py-2 text-gray-700 hover:bg-gray-200 transition duration-150">Course 2</a>
+                <div class="dropdown-menu-item relative">
+                  <a href="#" class="font-pop block px-4 py-2 text-gray-700 hover:bg-gray-200 transition duration-150">More Courses</a>
+                  <div class="sub-dropdown-menu absolute left-full top-0 bg-white shadow-lg rounded-lg mt-2 w-48">
+                    <a href="#" class="font-pop block px-4 py-2 text-gray-700 hover:bg-gray-200 transition duration-150">Sub Course 1</a>
+                    <a href="#" class="font-pop block px-4 py-2 text-gray-700 hover:bg-gray-200 transition duration-150">Sub Course 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="lg:py-8 font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Training</a>
+            <a href="#" class="lg:py-8 font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Academic</a>
+            <a href="#" class="lg:py-8 font-pop text-base font-normal text-gray-2 hover:text-secondary-dark-blue transition-all duration-150">Success Stories</a>
+          </div>
+
+          <div class="w-1/5 hidden lg:flex justify-end relative">
+            <a href="#" class="font-pop text-base font-normal flex items-center gap-2.5 text-primary-dark-blue hover:text-tertiary-orange transition-all duration-150 relative z-10">
+              <span class="bg-primary-dark-blue w-30 h-30 rounded-full flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.258" height="17.285" viewBox="0 0 19.258 17.285">
+                  <path id="Path_3" data-name="Path 3" d="M15.129,18.143l9.129-5.072L15.129,8,6,13.072Zm0,0,6.248-3.469a12.254,12.254,0,0,1,.675,6.568,12.138,12.138,0,0,0-6.923,3.043,12.138,12.138,0,0,0-6.923-3.043,12.254,12.254,0,0,1,.675-6.568Zm-4.057,6.086V16.622l4.057-2.252" transform="translate(-5.5 -7.5)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                </svg>
+              </span>
+              Online Admission</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="text-p-color lg:hidden cursor-pointer z-999999 relative">
+            <!-- Hamburger icon -->
+            <div id="nav-icon" class="w-6 h-4 relative cursor-pointer">
+              <span class="block absolute h-0.5 w-full bg-black top-0 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-1.5 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-1.5 left-0"></span>
+              <span class="block absolute h-0.5 w-full bg-black top-3 left-0"></span>
+            </div>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="fixed w-full h-screen bg-primary-dark-blue hide top-54 z-999999 overflow-auto">
+            <div class="px-5 py-10 text-center">
+              <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                About Us</a>
+              <div class="dropdown">
+                <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Courses</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Course 1</a>
+                  <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Course 2</a>
+                  <div class="dropdown-menu-item">
+                    <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">More Courses</a>
+                    <div class="sub-dropdown-menu">
+                      <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Sub Course 1</a>
+                      <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">Sub Course 2</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                Training</a>
+              <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                Academic</a>
+              <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                Success Stories</a>
+              <a href="#" class="block font-pop text-base font-normal text-white mb-5 hover:text-tertiary-orange transition-all duration-150">
+                Online Admission</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------ Nav End ------------------ -->
+  </section>
+
+  <script>
+    // Mobile menu toggle script
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hide');
+    });
+
+    // Dropdown toggle for mobile
+    document.querySelectorAll('#mobile-menu .dropdown > a').forEach(dropdownToggle => {
+      dropdownToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
+    });
+
+    // Script for Navigation bar Mobile menu
+    let navIcon = document.querySelector("#nav-icon");
+    let mobileMenu = document.querySelector("#mobile-menu");
+
+    navIcon.addEventListener("click", function () {
+      navIcon.classList.toggle("open");
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
+  <script src="../src/js/tiny-slider.js"></script>
+  <script src="../src/js/sweetalert2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../src/js/svg.js"></script>
+  <script src="../src/js/script.js"></script>
 </body>
+
 </html>

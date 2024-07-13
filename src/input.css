@@ -373,3 +373,29 @@
   transform: translateY(-50%);
 }
 /* End */
+
+/* Additional styles for the Navigation dropdown menu */
+.dropdown-menu,
+.sub-dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu-item:hover .sub-dropdown-menu {
+  display: block;
+}
+
+/* For Mobile Menu */
+#mobile-menu .dropdown>a::after {
+  content: '\25BC';
+  float: right;
+}
+
+#mobile-menu .dropdown-menu {
+  display: none;
+}
+
+#mobile-menu .dropdown.open .dropdown-menu {
+  display: block;
+}
+/* End */
